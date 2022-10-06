@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <link href="style.css" rel="stylesheet">
+    <title>Bootstrap Page</title>
+</head>
+<body >
+
+  <!--Nav menu-->
+  <nav class="navbar col-12  navbar-dark bg-dark">
+    <div class="container-fluid col-11 m-auto">
+      <a class="navbar-brand" href="#">
+        <img src="./img/icons8-projetor-de-filme-64.png" alt="logo" width="35" height="35">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Compre Online</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Filmes
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#cartaz">Em cartaz</a></li>
+              <li><a class="dropdown-item" href="#breve">Em breve</a></li> 
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shaw's Bar</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <br>
+
+  <!--Div carossel-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/movie time.png" class="d-block w-100" alt="banner inicial">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/black panther.png" class="d-block w-100" alt="propaganda 1">     
+      </div>
+      <div class="carousel-item">
+        <img src="./img/The woman king.png" class="d-block w-100" alt="propaganda 2">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <br>
+  <br>
+
+  <h1 id=cartaz class="display-5 text-center text-danger"><strong>Em cartaz</strong></h1>
+
+  <!--Div cards-em cartaz-->
+  <div class=" row row-cols-1 row-cols-md-3 g-4 col-11 m-auto" >
+    <div class="col">
+      <div class="card h-80 shadow p-3 mb-5 bg-body rounded border border-dark">
+        <img src="./img/orfã.png" class="card-img-top w-100 p-3 border border-secondary" alt="cartaz 1">
+        <div class="card-body text-center">
+          <h5 class="card-title"><strong>ORFÃ 2 A ORIGEM</strong></h5>
+          <p class="card-text"><strong>Elenco: </strong> Isabelle Fuhrman, Julia Stiles, Rossif Sutherland <br>
+            <strong>Direção: </strong> William Brent Bell <br>
+            <strong>Duração: </strong> 01h39m <br>
+            <strong>Gênero:</strong> Terror, Suspense<br>
+            <strong>Classificação:</strong>  16 anos</p>
+          <a href="#" class="btn btn-outline-primary">Comprar Ingresso</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-80 shadow p-3 mb-5 bg-body rounded border border-dark" >
+        <img src="./img/não olhe.png" class="card-img-top w-100 p-3 border border-secondary" alt="cartaz 2">
+        <div class="card-body text-center">
+          <h5 class="card-title"><strong>NÃO!NÃO OLHE!</strong></h5>
+          <p class="card-text"><strong>Elenco: </strong> Daniel Kaluuya, Keke Palmer, Steven Yeun <br>
+            <strong>Direção: </strong> Jordan Peele <br>
+            <strong>Duração: </strong> 02h10m <br>
+            <strong>Gênero:</strong> Terror, Suspense<br>
+            <strong>Classificação:</strong> 14 anos</p>
+          <a href="#" class="btn btn-outline-primary">Comprar Ingresso</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-80 shadow p-3 mb-5 bg-body rounded border border-dark" >
+        <img src="./img/tadeo.png" class="card-img-top w-100 p-3 border border-secondary" alt="cartaz 3">
+        <div class="card-body text-center">
+          <h5 class="card-title"><strong>AS AVENTURAS DE TADEO E A TÁBUA DE ESMERALDA</strong></h5>
+          <p class="card-text"><strong>Elenco: </strong> Michelle Jenner, Ben Cura <br>
+            <strong>Direção: </strong> Enrique Gato <br>
+            <strong>Duração: </strong> 1h31m <br>
+            <strong>Gênero:</strong> Animação, Comédia<br>
+            <strong>Classificação:</strong> Livre</p>
+          <a href="#" class="btn btn-outline-primary">Comprar Ingresso</a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+<h1 id="breve" class="display-5 text-center text-danger"><strong>Em breve</strong></h1>
+
+  <!--Div cards-em breve-->
+  <div class=" row row-cols-1 row-cols-md-3 g-4 col-11 m-auto" >
+    <div class="col">
+      <div class="card h-80 shadow p-3 mb-5 bg-body rounded border border-dark">
+        <img src="./img/adão negro.png" class="card-img-top w-100 p-3 border border-secondary" alt="cartaz 1">
+        <div class="card-body text-center">
+          <h5 class="card-title"><strong>ADÃO NEGRO</strong></h5>
+          <p class="card-text"><strong>Elenco: </strong> Dwayne Johnson, Quintessa Swindell, Aldis Hodge <br>
+            <strong>Direção: </strong> Jaume Collet-Serra <br>
+            <strong>Duração: </strong> 2h06min <br>
+            <strong>Gênero:</strong> Ação, Aventura, Ficção científa<br>
+            <strong>Classificação:</strong> 12 anos<br><br>
+            <strong class="text-danger">Lançamento: 20/10/2022</strong></p>
+            
+          <a href="#" class="btn btn-outline-primary">Reservar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-80 shadow p-3 mb-5 bg-body rounded border border-dark">
+        <img src="./img/sorria.png" class="card-img-top w-100 p-3 border border-secondary" alt="cartaz 2">
+        <div class="card-body text-center">
+          <h5 class="card-title"><strong>SORRIA</strong></h5>
+          <p class="card-text"><strong>Elenco: </strong> Sosie Bacon, Jessie T. Usher, Kyle Gallner <br>
+            <strong>Direção: </strong> Parker Finn <br>
+            <strong>Duração: </strong> 1h55m <br>
+            <strong>Gênero:</strong> Terror, Suspense<br>
+            <strong>Classificação:</strong> 16 anos<br><br>
+            <strong class="text-danger">Lançamento: 29/09/2022</strong></p>
+            
+          <a href="#" class="btn btn-outline-primary">Reservar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-80 shadow p-3 mb-5 bg-body rounded border border-dark">
+        <img src="./img/mundo estranho.png" class="card-img-top w-100 p-3 border border-secondary" alt="cartaz 3">
+        <div class="card-body text-center">
+          <h5 class="card-title"><strong>MUNDO ESTRANHO</strong></h5>
+          <p class="card-text"><strong>Elenco: </strong> ake Gyllenhaal, Jaboukie Young-White, Gabrielle Union <br>
+          <strong>Direção: </strong> Don Hall <br>
+          <strong>Duração: </strong> 1h55m <br>
+          <strong>Gênero:</strong> Animação, Família, Aventura,<br>
+          <strong>Classificação:</strong> Livre<br><br>
+          <strong class="text-danger">Lançamento: 24/11/2022</strong></p>
+            
+          <a href="#" class="btn btn-outline-primary">Reservar</a>
+        </div>
+      </div>
+    </div> 
+  </div>
+
+  <!--Div rodape-->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between aling-intems-center py-3 my-4 border-top">
+      <a href="#" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <img src="./img/icons8-projetor-de-filme-64.png" alt="logo" width="40" height="35">
+      </a>
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">Compre online</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">Filmes</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">Shaw's Bar</a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+
+</body>
+</html>
